@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  PriceBTCViewController.h
 //  Satoshi
 //
 //  Created by Jason Ravel on 1/4/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface PriceBTCViewController : UIViewController
 
 @end

@@ -15,14 +15,16 @@
 		795DFAEB18788D6300EE889E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFAEA18788D6300EE889E /* AppDelegate.m */; };
 		795DFAEE18788D6300EE889E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795DFAEC18788D6300EE889E /* Main_iPhone.storyboard */; };
 		795DFAF118788D6300EE889E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795DFAEF18788D6300EE889E /* Main_iPad.storyboard */; };
-		795DFAF418788D6300EE889E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFAF318788D6300EE889E /* FirstViewController.m */; };
-		795DFAF718788D6300EE889E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFAF618788D6300EE889E /* SecondViewController.m */; };
 		795DFAF918788D6300EE889E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795DFAF818788D6300EE889E /* Images.xcassets */; };
 		795DFB0018788D6300EE889E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795DFAFF18788D6300EE889E /* XCTest.framework */; };
 		795DFB0118788D6300EE889E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795DFADA18788D6300EE889E /* Foundation.framework */; };
 		795DFB0218788D6300EE889E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795DFADE18788D6300EE889E /* UIKit.framework */; };
 		795DFB0A18788D6300EE889E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 795DFB0818788D6300EE889E /* InfoPlist.strings */; };
 		795DFB0C18788D6300EE889E /* SatoshiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFB0B18788D6300EE889E /* SatoshiTests.m */; };
+		795DFB1718788FEC00EE889E /* RedditBTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFB1618788FEC00EE889E /* RedditBTCViewController.m */; };
+		795DFB1A18788FFF00EE889E /* TwitterBTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFB1918788FFF00EE889E /* TwitterBTCViewController.m */; };
+		795DFB1D187890A500EE889E /* MapBTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFB1C187890A500EE889E /* MapBTCViewController.m */; };
+		795DFB20187890BD00EE889E /* PriceBTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFB1F187890BD00EE889E /* PriceBTCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,16 +50,20 @@
 		795DFAEA18788D6300EE889E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		795DFAED18788D6300EE889E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		795DFAF018788D6300EE889E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		795DFAF218788D6300EE889E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		795DFAF318788D6300EE889E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		795DFAF518788D6300EE889E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		795DFAF618788D6300EE889E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		795DFAF818788D6300EE889E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		795DFAFE18788D6300EE889E /* SatoshiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SatoshiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		795DFAFF18788D6300EE889E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		795DFB0718788D6300EE889E /* SatoshiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SatoshiTests-Info.plist"; sourceTree = "<group>"; };
 		795DFB0918788D6300EE889E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		795DFB0B18788D6300EE889E /* SatoshiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SatoshiTests.m; sourceTree = "<group>"; };
+		795DFB1518788FEC00EE889E /* RedditBTCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditBTCViewController.h; sourceTree = "<group>"; };
+		795DFB1618788FEC00EE889E /* RedditBTCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditBTCViewController.m; sourceTree = "<group>"; };
+		795DFB1818788FFF00EE889E /* TwitterBTCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterBTCViewController.h; sourceTree = "<group>"; };
+		795DFB1918788FFF00EE889E /* TwitterBTCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterBTCViewController.m; sourceTree = "<group>"; };
+		795DFB1B187890A500EE889E /* MapBTCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapBTCViewController.h; path = ../MapBTCViewController.h; sourceTree = "<group>"; };
+		795DFB1C187890A500EE889E /* MapBTCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapBTCViewController.m; path = ../MapBTCViewController.m; sourceTree = "<group>"; };
+		795DFB1E187890BD00EE889E /* PriceBTCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PriceBTCViewController.h; path = ../PriceBTCViewController.h; sourceTree = "<group>"; };
+		795DFB1F187890BD00EE889E /* PriceBTCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PriceBTCViewController.m; path = ../PriceBTCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,14 +123,15 @@
 		795DFAE018788D6300EE889E /* Satoshi */ = {
 			isa = PBXGroup;
 			children = (
-				795DFAE918788D6300EE889E /* AppDelegate.h */,
-				795DFAEA18788D6300EE889E /* AppDelegate.m */,
-				795DFAEC18788D6300EE889E /* Main_iPhone.storyboard */,
-				795DFAEF18788D6300EE889E /* Main_iPad.storyboard */,
-				795DFAF218788D6300EE889E /* FirstViewController.h */,
-				795DFAF318788D6300EE889E /* FirstViewController.m */,
-				795DFAF518788D6300EE889E /* SecondViewController.h */,
-				795DFAF618788D6300EE889E /* SecondViewController.m */,
+				795DFB21187890DB00EE889E /* Models */,
+				795DFB1E187890BD00EE889E /* PriceBTCViewController.h */,
+				795DFB1F187890BD00EE889E /* PriceBTCViewController.m */,
+				795DFB1518788FEC00EE889E /* RedditBTCViewController.h */,
+				795DFB1618788FEC00EE889E /* RedditBTCViewController.m */,
+				795DFB1818788FFF00EE889E /* TwitterBTCViewController.h */,
+				795DFB1918788FFF00EE889E /* TwitterBTCViewController.m */,
+				795DFB1B187890A500EE889E /* MapBTCViewController.h */,
+				795DFB1C187890A500EE889E /* MapBTCViewController.m */,
 				795DFAF818788D6300EE889E /* Images.xcassets */,
 				795DFAE118788D6300EE889E /* Supporting Files */,
 			);
@@ -134,6 +141,9 @@
 		795DFAE118788D6300EE889E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				795DFAEF18788D6300EE889E /* Main_iPad.storyboard */,
+				795DFAE918788D6300EE889E /* AppDelegate.h */,
+				795DFAEA18788D6300EE889E /* AppDelegate.m */,
 				795DFAE218788D6300EE889E /* Satoshi-Info.plist */,
 				795DFAE318788D6300EE889E /* InfoPlist.strings */,
 				795DFAE618788D6300EE889E /* main.m */,
@@ -158,6 +168,14 @@
 				795DFB0818788D6300EE889E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		795DFB21187890DB00EE889E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				795DFAEC18788D6300EE889E /* Main_iPhone.storyboard */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795DFAF718788D6300EE889E /* SecondViewController.m in Sources */,
+				795DFB1D187890A500EE889E /* MapBTCViewController.m in Sources */,
 				795DFAEB18788D6300EE889E /* AppDelegate.m in Sources */,
-				795DFAF418788D6300EE889E /* FirstViewController.m in Sources */,
+				795DFB20187890BD00EE889E /* PriceBTCViewController.m in Sources */,
+				795DFB1A18788FFF00EE889E /* TwitterBTCViewController.m in Sources */,
+				795DFB1718788FEC00EE889E /* RedditBTCViewController.m in Sources */,
 				795DFAE718788D6300EE889E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

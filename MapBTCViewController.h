@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MapBTCViewController.h
 //  Satoshi
 //
 //  Created by Jason Ravel on 1/4/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface MapBTCViewController : UIViewController
 
 @end
