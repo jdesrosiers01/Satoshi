@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface RedditBTCViewController : UITableViewController
+{
+
+}
+
+
+@property (retain, nonatomic) NSMutableArray *redditObjects;
+
 
 @end

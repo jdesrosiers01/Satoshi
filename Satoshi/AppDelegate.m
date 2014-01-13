@@ -7,12 +7,32 @@
 //
 
 #import "AppDelegate.h"
+#import "SetupViewController.h"
+#import "PriceBTCViewController.h"
 
 @implementation AppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    //present the setup for now everytime.
+    //eventually when the user balance, currency, alert settings are saved to coreData, show only when there are no entries in the DB
+  
+    /*
+    SetupViewController *setupView = [[SetupViewController alloc] initWithNibName:@"SetupViewController" bundle:nil];
+    
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window.rootViewController = setupView;
+    [self.window makeKeyAndVisible];
+    
+
+    
+    [setupView release];
+    */
+   
+    
+    
     return YES;
 }
 							
@@ -42,5 +62,7 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 @end

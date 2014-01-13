@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79048E0D188385B100887313 /* comment-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79048E0C188385B100887313 /* comment-icon.png */; };
+		7931E72C187C9F1300B2605E /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E72A187C9F1300B2605E /* SetupViewController.m */; };
+		7931E72D187C9F1300B2605E /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7931E72B187C9F1300B2605E /* SetupViewController.xib */; };
+		7931E731187CA60800B2605E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931E730187CA60800B2605E /* Main_iPhone.storyboard */; };
 		795DFADB18788D6300EE889E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795DFADA18788D6300EE889E /* Foundation.framework */; };
 		795DFADD18788D6300EE889E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795DFADC18788D6300EE889E /* CoreGraphics.framework */; };
 		795DFADF18788D6300EE889E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795DFADE18788D6300EE889E /* UIKit.framework */; };
 		795DFAE518788D6300EE889E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 795DFAE318788D6300EE889E /* InfoPlist.strings */; };
 		795DFAE718788D6300EE889E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFAE618788D6300EE889E /* main.m */; };
 		795DFAEB18788D6300EE889E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DFAEA18788D6300EE889E /* AppDelegate.m */; };
-		795DFAEE18788D6300EE889E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795DFAEC18788D6300EE889E /* Main_iPhone.storyboard */; };
 		795DFAF118788D6300EE889E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795DFAEF18788D6300EE889E /* Main_iPad.storyboard */; };
 		795DFAF918788D6300EE889E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795DFAF818788D6300EE889E /* Images.xcassets */; };
 		795DFB0018788D6300EE889E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795DFAFF18788D6300EE889E /* XCTest.framework */; };
@@ -38,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79048E0C188385B100887313 /* comment-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-icon.png"; sourceTree = "<group>"; };
+		7931E729187C9F1300B2605E /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetupViewController.h; path = ../SetupViewController.h; sourceTree = "<group>"; };
+		7931E72A187C9F1300B2605E /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetupViewController.m; path = ../SetupViewController.m; sourceTree = "<group>"; };
+		7931E72B187C9F1300B2605E /* SetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SetupViewController.xib; path = ../SetupViewController.xib; sourceTree = "<group>"; };
+		7931E730187CA60800B2605E /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		795DFAD718788D6300EE889E /* Satoshi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Satoshi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		795DFADA18788D6300EE889E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		795DFADC18788D6300EE889E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,7 +56,6 @@
 		795DFAE818788D6300EE889E /* Satoshi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Satoshi-Prefix.pch"; sourceTree = "<group>"; };
 		795DFAE918788D6300EE889E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		795DFAEA18788D6300EE889E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		795DFAED18788D6300EE889E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		795DFAF018788D6300EE889E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		795DFAF818788D6300EE889E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		795DFAFE18788D6300EE889E /* SatoshiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SatoshiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				795DFB21187890DB00EE889E /* Models */,
+				7931E730187CA60800B2605E /* Main_iPhone.storyboard */,
+				7931E729187C9F1300B2605E /* SetupViewController.h */,
+				7931E72A187C9F1300B2605E /* SetupViewController.m */,
+				7931E72B187C9F1300B2605E /* SetupViewController.xib */,
 				795DFB1E187890BD00EE889E /* PriceBTCViewController.h */,
 				795DFB1F187890BD00EE889E /* PriceBTCViewController.m */,
 				795DFB1518788FEC00EE889E /* RedditBTCViewController.h */,
@@ -141,9 +152,10 @@
 		795DFAE118788D6300EE889E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				795DFAEF18788D6300EE889E /* Main_iPad.storyboard */,
+				79048E0C188385B100887313 /* comment-icon.png */,
 				795DFAE918788D6300EE889E /* AppDelegate.h */,
 				795DFAEA18788D6300EE889E /* AppDelegate.m */,
+				795DFAEF18788D6300EE889E /* Main_iPad.storyboard */,
 				795DFAE218788D6300EE889E /* Satoshi-Info.plist */,
 				795DFAE318788D6300EE889E /* InfoPlist.strings */,
 				795DFAE618788D6300EE889E /* main.m */,
@@ -173,7 +185,6 @@
 		795DFB21187890DB00EE889E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				795DFAEC18788D6300EE889E /* Main_iPhone.storyboard */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -254,9 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7931E72D187C9F1300B2605E /* SetupViewController.xib in Resources */,
 				795DFAF118788D6300EE889E /* Main_iPad.storyboard in Resources */,
+				7931E731187CA60800B2605E /* Main_iPhone.storyboard in Resources */,
 				795DFAF918788D6300EE889E /* Images.xcassets in Resources */,
-				795DFAEE18788D6300EE889E /* Main_iPhone.storyboard in Resources */,
+				79048E0D188385B100887313 /* comment-icon.png in Resources */,
 				795DFAE518788D6300EE889E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +291,7 @@
 			files = (
 				795DFB1D187890A500EE889E /* MapBTCViewController.m in Sources */,
 				795DFAEB18788D6300EE889E /* AppDelegate.m in Sources */,
+				7931E72C187C9F1300B2605E /* SetupViewController.m in Sources */,
 				795DFB20187890BD00EE889E /* PriceBTCViewController.m in Sources */,
 				795DFB1A18788FFF00EE889E /* TwitterBTCViewController.m in Sources */,
 				795DFB1718788FEC00EE889E /* RedditBTCViewController.m in Sources */,
@@ -310,14 +324,6 @@
 				795DFAE418788D6300EE889E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		795DFAEC18788D6300EE889E /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				795DFAED18788D6300EE889E /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		795DFAEF18788D6300EE889E /* Main_iPad.storyboard */ = {
@@ -418,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Satoshi/Satoshi-Prefix.pch";
 				INFOPLIST_FILE = "Satoshi/Satoshi-Info.plist";
@@ -431,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Satoshi/Satoshi-Prefix.pch";
 				INFOPLIST_FILE = "Satoshi/Satoshi-Info.plist";
@@ -500,6 +508,7 @@
 				795DFB1118788D6300EE889E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		795DFB1218788D6300EE889E /* Build configuration list for PBXNativeTarget "SatoshiTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +517,7 @@
 				795DFB1418788D6300EE889E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

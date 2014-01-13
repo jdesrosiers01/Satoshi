@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>480234CE-CF07-4232-BAF5-B2FB1E4F36C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Satoshi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AFE8927F-6C7B-41F9-BD00-F9209B2C24ED</key>
+		<string>ssh://github.com/llSourcell/Satoshi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Satoshi.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AFE8927F-6C7B-41F9-BD00-F9209B2C24ED</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/llSourcell/Satoshi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AFE8927F-6C7B-41F9-BD00-F9209B2C24ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AFE8927F-6C7B-41F9-BD00-F9209B2C24ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Satoshi</string>
+		</dict>
+	</array>
+</dict>
+</plist>
