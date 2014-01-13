@@ -40,12 +40,23 @@
 {
     [super viewDidLoad];
     
+    //Comments For links
+    NSString *article_id = [[NSUserDefaults standardUserDefaults]
+                         stringForKey:@"article_id"];
+    NSString *append_articleID = [article_id stringByAppendingString:@"/.json"];
     
-    //first cell is post/link
+    NSString *reddit_data_url = @"http://www.reddit.com/r/bitcoin/comments/";
+    NSString *final_link = [reddit_data_url stringByAppendingString:append_articleID];
+    NSLog(@"final link is %@", final_link);
+    NSError *error = nil;
+    NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:reddit_data_url]];
+    NSLog(@"the json data is %@", jsonData);
     
-    //remaining cells
-      //parents are initial comments
-      //children are array of replies
+    
+    //Comments For posts
+    
+    
+    
     
 	//[1] Create comment thread
     RADataObject *phone1 = [RADataObject dataObjectWithName:@"Phone 1" children:nil];

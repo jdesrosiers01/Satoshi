@@ -9,6 +9,7 @@
 #import "RedditLinkViewController.h"
 #import "RedditBTCViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "CommentViewController.h"
 
 
 @interface RedditLinkViewController ()
@@ -75,13 +76,41 @@
     [button setTitle:@"Back" forState:UIControlStateNormal];
     button.frame = CGRectMake(5.0, 20.0, 50.0, 40.0);
     button.titleLabel.textColor = [UIColor orangeColor];
+    [button setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     button.titleLabel.font = smallestFont;
     button.backgroundColor = [UIColor clearColor];
     [self.view addSubview:button];
     [[UIApplication sharedApplication].keyWindow bringSubviewToFront:button];
+    
+    //add comments button
+    UIButton *commentsButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [commentsButton addTarget:self
+               action:@selector(gotoComments)
+     forControlEvents:UIControlEventTouchDown];
+    [commentsButton setTitle:@"comments" forState:UIControlStateNormal];
+    commentsButton.frame = CGRectMake(130, 530.0, 70.0, 40.0);
+    commentsButton.titleLabel.textColor = [UIColor orangeColor];
+    [commentsButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    commentsButton.titleLabel.font = smallestFont;
+    commentsButton.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:commentsButton];
+    [[UIApplication sharedApplication].keyWindow bringSubviewToFront:commentsButton];
+    
 
     
    
+}
+-(void) gotoComments
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+
+    CommentViewController *commentView = [storyboard instantiateViewControllerWithIdentifier:@"commentView"];
+    [commentView setModalPresentationStyle:UIModalPresentationFullScreen];
+    [self presentViewController:commentView animated:YES completion:^{
+        NSLog(@"It worked");
+    }];
+    
+    
 }
 
 - (void)makeButtonShiny:(UIView*)button withBackgroundColor:(UIColor*)backgroundColor

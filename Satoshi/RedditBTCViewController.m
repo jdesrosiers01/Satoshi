@@ -232,8 +232,11 @@
     {
         //store the link in nsuserdefaults
         NSString *the_url_selected = [postObject objectForKey:@"url"];
+        NSString *the_article_id = [postObject objectForKey:@"id"];
         [[NSUserDefaults standardUserDefaults]
          setObject:the_url_selected forKey:@"url_selected"];
+        [[NSUserDefaults standardUserDefaults]
+         setObject:the_article_id forKey:@"article_id"];
      
         RedditLinkViewController *redditLink = [storyboard instantiateViewControllerWithIdentifier:@"redditLink"];
         [redditLink setModalPresentationStyle:UIModalPresentationFullScreen];
