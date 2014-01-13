@@ -7,6 +7,8 @@
 //
 
 #import "RedditBTCViewController.h"
+#import "RedditLinkViewController.h"
+#import "CommentViewController.h"
 
 @interface RedditBTCViewController ()
 
@@ -129,9 +131,9 @@
 {
     static NSString *CellIdentifier = @"reddit_cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"reddit_cell"];
-    }
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"reddit_cell"];
+//    }
     
     
     
@@ -219,9 +221,37 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   // static NSString *CellIdentifier = @"reddit_cell";
-  //  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    NSLog(@"Tapped!");
+   //get the selected redditObject
+    NSDictionary *postObject = [self.redditObjects objectAtIndex:indexPath.row];
+    NSString *the_post = [postObject objectForKey:@"selftext"];
+    NSLog(@"The post is %@", the_post);
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+    
+    //if it is a  link, go to the Link view controller
+    if([the_post isEqual:@""])
+    {
+        //store the link in nsuserdefaults
+        NSString *the_url_selected = [postObject objectForKey:@"url"];
+        [[NSUserDefaults standardUserDefaults]
+         setObject:the_url_selected forKey:@"url_selected"];
+     
+        RedditLinkViewController *redditLink = [storyboard instantiateViewControllerWithIdentifier:@"redditLink"];
+        [redditLink setModalPresentationStyle:UIModalPresentationFullScreen];
+        [self presentViewController:redditLink animated:YES completion:^{
+            NSLog(@"it worked");
+        }];
+    }
+
+    //if its a post, go straight to the comment view controller
+    else
+    {
+        CommentViewController *commentView = [storyboard instantiateViewControllerWithIdentifier:@"commentView"];
+        [commentView setModalPresentationStyle:UIModalPresentationFullScreen];
+        [self presentViewController:commentView animated:YES completion:^{
+            NSLog(@"It worked");
+        }];
+        
+    }
     
 }
 

@@ -9,7 +9,21 @@
 /* Begin PBXBuildFile section */
 		79048E0D188385B100887313 /* comment-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79048E0C188385B100887313 /* comment-icon.png */; };
 		79048E0F18838A4E00887313 /* reddit-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79048E0E18838A4E00887313 /* reddit-icon.png */; };
-		79048E121883C98C00887313 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E111883C98C00887313 /* CommentViewController.m */; };
+		79048E141883CFB200887313 /* backgroundTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 79048E131883CFB200887313 /* backgroundTabBar.png */; };
+		79048E2D18845EA600887313 /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E1A18845EA600887313 /* RATreeNode.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E2E18845EA600887313 /* RATreeNodeCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E1C18845EA600887313 /* RATreeNodeCollectionController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E2F18845EA600887313 /* RATreeNodeInfo+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E1E18845EA600887313 /* RATreeNodeInfo+Private.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E3018845EA600887313 /* RATreeNodeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E2018845EA600887313 /* RATreeNodeInfo.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E3118845EA600887313 /* RATreeView+Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E2218845EA600887313 /* RATreeView+Enums.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E3218845EA600887313 /* RATreeView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E2418845EA600887313 /* RATreeView+Private.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E3318845EA600887313 /* RATreeView+TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E2618845EA600887313 /* RATreeView+TableViewDataSource.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E3418845EA600887313 /* RATreeView+TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E2818845EA600887313 /* RATreeView+TableViewDelegate.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E3518845EA600887313 /* RATreeView+UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E2A18845EA600887313 /* RATreeView+UIScrollView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E3618845EA600887313 /* RATreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E2C18845EA600887313 /* RATreeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E3918845EF700887313 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E3818845EF700887313 /* CommentViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79048E3B18845F3500887313 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79048E3A18845F3500887313 /* QuartzCore.framework */; };
+		79048E3E1884606E00887313 /* RADataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E3D1884606E00887313 /* RADataObject.m */; };
+		79048E41188464EF00887313 /* RedditLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E40188464EF00887313 /* RedditLinkViewController.m */; };
 		7931E72C187C9F1300B2605E /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E72A187C9F1300B2605E /* SetupViewController.m */; };
 		7931E72D187C9F1300B2605E /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7931E72B187C9F1300B2605E /* SetupViewController.xib */; };
 		7931E731187CA60800B2605E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931E730187CA60800B2605E /* Main_iPhone.storyboard */; };
@@ -45,8 +59,34 @@
 /* Begin PBXFileReference section */
 		79048E0C188385B100887313 /* comment-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-icon.png"; sourceTree = "<group>"; };
 		79048E0E18838A4E00887313 /* reddit-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reddit-icon.png"; sourceTree = "<group>"; };
-		79048E101883C98C00887313 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
-		79048E111883C98C00887313 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		79048E131883CFB200887313 /* backgroundTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundTabBar.png; sourceTree = "<group>"; };
+		79048E1918845EA600887313 /* RATreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNode.h; sourceTree = "<group>"; };
+		79048E1A18845EA600887313 /* RATreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNode.m; sourceTree = "<group>"; };
+		79048E1B18845EA600887313 /* RATreeNodeCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNodeCollectionController.h; sourceTree = "<group>"; };
+		79048E1C18845EA600887313 /* RATreeNodeCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeCollectionController.m; sourceTree = "<group>"; };
+		79048E1D18845EA600887313 /* RATreeNodeInfo+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeNodeInfo+Private.h"; sourceTree = "<group>"; };
+		79048E1E18845EA600887313 /* RATreeNodeInfo+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeNodeInfo+Private.m"; sourceTree = "<group>"; };
+		79048E1F18845EA600887313 /* RATreeNodeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNodeInfo.h; sourceTree = "<group>"; };
+		79048E2018845EA600887313 /* RATreeNodeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeInfo.m; sourceTree = "<group>"; };
+		79048E2118845EA600887313 /* RATreeView+Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+Enums.h"; sourceTree = "<group>"; };
+		79048E2218845EA600887313 /* RATreeView+Enums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+Enums.m"; sourceTree = "<group>"; };
+		79048E2318845EA600887313 /* RATreeView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+Private.h"; sourceTree = "<group>"; };
+		79048E2418845EA600887313 /* RATreeView+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+Private.m"; sourceTree = "<group>"; };
+		79048E2518845EA600887313 /* RATreeView+TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+TableViewDataSource.h"; sourceTree = "<group>"; };
+		79048E2618845EA600887313 /* RATreeView+TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+TableViewDataSource.m"; sourceTree = "<group>"; };
+		79048E2718845EA600887313 /* RATreeView+TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+TableViewDelegate.h"; sourceTree = "<group>"; };
+		79048E2818845EA600887313 /* RATreeView+TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+TableViewDelegate.m"; sourceTree = "<group>"; };
+		79048E2918845EA600887313 /* RATreeView+UIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+UIScrollView.h"; sourceTree = "<group>"; };
+		79048E2A18845EA600887313 /* RATreeView+UIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+UIScrollView.m"; sourceTree = "<group>"; };
+		79048E2B18845EA600887313 /* RATreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeView.h; sourceTree = "<group>"; };
+		79048E2C18845EA600887313 /* RATreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeView.m; sourceTree = "<group>"; };
+		79048E3718845EF700887313 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentViewController.h; path = ../CommentViewController.h; sourceTree = "<group>"; };
+		79048E3818845EF700887313 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentViewController.m; path = ../CommentViewController.m; sourceTree = "<group>"; };
+		79048E3A18845F3500887313 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		79048E3C1884606E00887313 /* RADataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RADataObject.h; path = "../../../Downloads/RATreeView-master/Demo/RADataObject.h"; sourceTree = "<group>"; };
+		79048E3D1884606E00887313 /* RADataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RADataObject.m; path = "../../../Downloads/RATreeView-master/Demo/RADataObject.m"; sourceTree = "<group>"; };
+		79048E3F188464EF00887313 /* RedditLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditLinkViewController.h; sourceTree = "<group>"; };
+		79048E40188464EF00887313 /* RedditLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditLinkViewController.m; sourceTree = "<group>"; };
 		7931E729187C9F1300B2605E /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetupViewController.h; path = ../SetupViewController.h; sourceTree = "<group>"; };
 		7931E72A187C9F1300B2605E /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetupViewController.m; path = ../SetupViewController.m; sourceTree = "<group>"; };
 		7931E72B187C9F1300B2605E /* SetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SetupViewController.xib; path = ../SetupViewController.xib; sourceTree = "<group>"; };
@@ -83,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79048E3B18845F3500887313 /* QuartzCore.framework in Frameworks */,
 				795DFADD18788D6300EE889E /* CoreGraphics.framework in Frameworks */,
 				795DFADF18788D6300EE889E /* UIKit.framework in Frameworks */,
 				795DFADB18788D6300EE889E /* Foundation.framework in Frameworks */,
@@ -102,6 +143,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79048E1818845EA600887313 /* RATreeView */ = {
+			isa = PBXGroup;
+			children = (
+				79048E1918845EA600887313 /* RATreeNode.h */,
+				79048E1A18845EA600887313 /* RATreeNode.m */,
+				79048E1B18845EA600887313 /* RATreeNodeCollectionController.h */,
+				79048E1C18845EA600887313 /* RATreeNodeCollectionController.m */,
+				79048E1D18845EA600887313 /* RATreeNodeInfo+Private.h */,
+				79048E1E18845EA600887313 /* RATreeNodeInfo+Private.m */,
+				79048E1F18845EA600887313 /* RATreeNodeInfo.h */,
+				79048E2018845EA600887313 /* RATreeNodeInfo.m */,
+				79048E2118845EA600887313 /* RATreeView+Enums.h */,
+				79048E2218845EA600887313 /* RATreeView+Enums.m */,
+				79048E2318845EA600887313 /* RATreeView+Private.h */,
+				79048E2418845EA600887313 /* RATreeView+Private.m */,
+				79048E2518845EA600887313 /* RATreeView+TableViewDataSource.h */,
+				79048E2618845EA600887313 /* RATreeView+TableViewDataSource.m */,
+				79048E2718845EA600887313 /* RATreeView+TableViewDelegate.h */,
+				79048E2818845EA600887313 /* RATreeView+TableViewDelegate.m */,
+				79048E2918845EA600887313 /* RATreeView+UIScrollView.h */,
+				79048E2A18845EA600887313 /* RATreeView+UIScrollView.m */,
+				79048E2B18845EA600887313 /* RATreeView.h */,
+				79048E2C18845EA600887313 /* RATreeView.m */,
+			);
+			path = RATreeView;
+			sourceTree = "<group>";
+		};
 		795DFACE18788D6300EE889E = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +192,7 @@
 		795DFAD918788D6300EE889E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79048E3A18845F3500887313 /* QuartzCore.framework */,
 				795DFADA18788D6300EE889E /* Foundation.framework */,
 				795DFADC18788D6300EE889E /* CoreGraphics.framework */,
 				795DFADE18788D6300EE889E /* UIKit.framework */,
@@ -144,8 +213,12 @@
 				795DFB1F187890BD00EE889E /* PriceBTCViewController.m */,
 				795DFB1518788FEC00EE889E /* RedditBTCViewController.h */,
 				795DFB1618788FEC00EE889E /* RedditBTCViewController.m */,
-				79048E101883C98C00887313 /* CommentViewController.h */,
-				79048E111883C98C00887313 /* CommentViewController.m */,
+				79048E3718845EF700887313 /* CommentViewController.h */,
+				79048E3818845EF700887313 /* CommentViewController.m */,
+				79048E3F188464EF00887313 /* RedditLinkViewController.h */,
+				79048E40188464EF00887313 /* RedditLinkViewController.m */,
+				79048E3C1884606E00887313 /* RADataObject.h */,
+				79048E3D1884606E00887313 /* RADataObject.m */,
 				795DFB1818788FFF00EE889E /* TwitterBTCViewController.h */,
 				795DFB1918788FFF00EE889E /* TwitterBTCViewController.m */,
 				795DFB1B187890A500EE889E /* MapBTCViewController.h */,
@@ -159,6 +232,8 @@
 		795DFAE118788D6300EE889E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				79048E1818845EA600887313 /* RATreeView */,
+				79048E131883CFB200887313 /* backgroundTabBar.png */,
 				79048E0C188385B100887313 /* comment-icon.png */,
 				795DFAE918788D6300EE889E /* AppDelegate.h */,
 				795DFAEA18788D6300EE889E /* AppDelegate.m */,
@@ -276,6 +351,7 @@
 				79048E0F18838A4E00887313 /* reddit-icon.png in Resources */,
 				7931E72D187C9F1300B2605E /* SetupViewController.xib in Resources */,
 				795DFAF118788D6300EE889E /* Main_iPad.storyboard in Resources */,
+				79048E141883CFB200887313 /* backgroundTabBar.png in Resources */,
 				7931E731187CA60800B2605E /* Main_iPhone.storyboard in Resources */,
 				795DFAF918788D6300EE889E /* Images.xcassets in Resources */,
 				79048E0D188385B100887313 /* comment-icon.png in Resources */,
@@ -298,14 +374,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79048E3418845EA600887313 /* RATreeView+TableViewDelegate.m in Sources */,
 				795DFB1D187890A500EE889E /* MapBTCViewController.m in Sources */,
 				795DFAEB18788D6300EE889E /* AppDelegate.m in Sources */,
 				7931E72C187C9F1300B2605E /* SetupViewController.m in Sources */,
+				79048E2F18845EA600887313 /* RATreeNodeInfo+Private.m in Sources */,
+				79048E2D18845EA600887313 /* RATreeNode.m in Sources */,
+				79048E3918845EF700887313 /* CommentViewController.m in Sources */,
+				79048E3318845EA600887313 /* RATreeView+TableViewDataSource.m in Sources */,
+				79048E3118845EA600887313 /* RATreeView+Enums.m in Sources */,
+				79048E3E1884606E00887313 /* RADataObject.m in Sources */,
+				79048E41188464EF00887313 /* RedditLinkViewController.m in Sources */,
 				795DFB20187890BD00EE889E /* PriceBTCViewController.m in Sources */,
-				79048E121883C98C00887313 /* CommentViewController.m in Sources */,
+				79048E2E18845EA600887313 /* RATreeNodeCollectionController.m in Sources */,
+				79048E3618845EA600887313 /* RATreeView.m in Sources */,
+				79048E3018845EA600887313 /* RATreeNodeInfo.m in Sources */,
 				795DFB1A18788FFF00EE889E /* TwitterBTCViewController.m in Sources */,
 				795DFB1718788FEC00EE889E /* RedditBTCViewController.m in Sources */,
 				795DFAE718788D6300EE889E /* main.m in Sources */,
+				79048E3518845EA600887313 /* RATreeView+UIScrollView.m in Sources */,
+				79048E3218845EA600887313 /* RATreeView+Private.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
