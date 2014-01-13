@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		79048E0D188385B100887313 /* comment-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79048E0C188385B100887313 /* comment-icon.png */; };
+		79048E0F18838A4E00887313 /* reddit-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79048E0E18838A4E00887313 /* reddit-icon.png */; };
+		79048E121883C98C00887313 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E111883C98C00887313 /* CommentViewController.m */; };
 		7931E72C187C9F1300B2605E /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E72A187C9F1300B2605E /* SetupViewController.m */; };
 		7931E72D187C9F1300B2605E /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7931E72B187C9F1300B2605E /* SetupViewController.xib */; };
 		7931E731187CA60800B2605E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931E730187CA60800B2605E /* Main_iPhone.storyboard */; };
@@ -42,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		79048E0C188385B100887313 /* comment-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-icon.png"; sourceTree = "<group>"; };
+		79048E0E18838A4E00887313 /* reddit-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reddit-icon.png"; sourceTree = "<group>"; };
+		79048E101883C98C00887313 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		79048E111883C98C00887313 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
 		7931E729187C9F1300B2605E /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetupViewController.h; path = ../SetupViewController.h; sourceTree = "<group>"; };
 		7931E72A187C9F1300B2605E /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetupViewController.m; path = ../SetupViewController.m; sourceTree = "<group>"; };
 		7931E72B187C9F1300B2605E /* SetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SetupViewController.xib; path = ../SetupViewController.xib; sourceTree = "<group>"; };
@@ -139,6 +144,8 @@
 				795DFB1F187890BD00EE889E /* PriceBTCViewController.m */,
 				795DFB1518788FEC00EE889E /* RedditBTCViewController.h */,
 				795DFB1618788FEC00EE889E /* RedditBTCViewController.m */,
+				79048E101883C98C00887313 /* CommentViewController.h */,
+				79048E111883C98C00887313 /* CommentViewController.m */,
 				795DFB1818788FFF00EE889E /* TwitterBTCViewController.h */,
 				795DFB1918788FFF00EE889E /* TwitterBTCViewController.m */,
 				795DFB1B187890A500EE889E /* MapBTCViewController.h */,
@@ -156,6 +163,7 @@
 				795DFAE918788D6300EE889E /* AppDelegate.h */,
 				795DFAEA18788D6300EE889E /* AppDelegate.m */,
 				795DFAEF18788D6300EE889E /* Main_iPad.storyboard */,
+				79048E0E18838A4E00887313 /* reddit-icon.png */,
 				795DFAE218788D6300EE889E /* Satoshi-Info.plist */,
 				795DFAE318788D6300EE889E /* InfoPlist.strings */,
 				795DFAE618788D6300EE889E /* main.m */,
@@ -265,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79048E0F18838A4E00887313 /* reddit-icon.png in Resources */,
 				7931E72D187C9F1300B2605E /* SetupViewController.xib in Resources */,
 				795DFAF118788D6300EE889E /* Main_iPad.storyboard in Resources */,
 				7931E731187CA60800B2605E /* Main_iPhone.storyboard in Resources */,
@@ -293,6 +302,7 @@
 				795DFAEB18788D6300EE889E /* AppDelegate.m in Sources */,
 				7931E72C187C9F1300B2605E /* SetupViewController.m in Sources */,
 				795DFB20187890BD00EE889E /* PriceBTCViewController.m in Sources */,
+				79048E121883C98C00887313 /* CommentViewController.m in Sources */,
 				795DFB1A18788FFF00EE889E /* TwitterBTCViewController.m in Sources */,
 				795DFB1718788FEC00EE889E /* RedditBTCViewController.m in Sources */,
 				795DFAE718788D6300EE889E /* main.m in Sources */,

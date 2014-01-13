@@ -29,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLineEtched];
+    self.redditObjects = [[NSMutableArray alloc] init];
     [self redditDataRequest];
     
 
@@ -60,7 +62,6 @@
         NSLog(@"level 2 %@", level2);
 
         
-        self.redditObjects = [[NSMutableArray alloc] init];
         for(id key in level2)
         {
             NSLog(@"the value is %@",key);
@@ -73,7 +74,7 @@
         }
         
         
-        
+
         
         
     }
@@ -90,12 +91,11 @@
 
 -(void) viewDidUnload
 {
-  
 }
 
 -(void) dealloc
 {
-   
+
     [super dealloc];
 }
 
@@ -129,21 +129,18 @@
 {
     static NSString *CellIdentifier = @"reddit_cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"reddit_cell"];
+    }
     
-    //TODO
     
-    //1. title
-    //2. poster name
-    //3. num comments
-    //4. timestamp
-    //5. thumbnail
     
     //Get Object
     NSDictionary *postObject = [self.redditObjects objectAtIndex:indexPath.row];
-    UIFont *myFont = [ UIFont fontWithName: @"Courier" size: 10.0];
-    UIFont *smallestFont = [ UIFont fontWithName: @"Courier" size: 7.0];
+    UIFont *myFont = [ UIFont fontWithName: @"Courier" size: 12.0];
+    UIFont *smallestFont = [ UIFont fontWithName: @"Courier" size: 8.0];
 
-
+    cell.backgroundColor = [UIColor blackColor];
     
     //[1] Get title
     NSString* title = [postObject objectForKey:@"title"];
@@ -154,10 +151,12 @@
     title_label.textColor = [UIColor orangeColor];
     title_label.font = myFont;
     [cell addSubview:title_label];
+    
+    [title_label release];
   
     //[2] Get poster
     NSString *poster = [postObject objectForKey:@"author"];
-    UILabel *poster_label= [[UILabel alloc] initWithFrame:CGRectMake(265, 40, 80,10)];
+    UILabel *poster_label= [[UILabel alloc] initWithFrame:CGRectMake(260, 40, 80,10)];
     poster_label.backgroundColor = [UIColor blackColor];
     poster_label.numberOfLines = 1;
     poster_label.text = poster;
@@ -165,31 +164,35 @@
     poster_label.font = smallestFont;
     [cell addSubview:poster_label];
     
-    //[5] Get Thumbnail
-    NSString *ImageURL =[postObject objectForKey:@"thumbnail"];
-    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:ImageURL]];
-    UIImageView *thumbnail_image = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,60,60)];
-    thumbnail_image.image = [UIImage imageWithData:imageData];
+    [poster_label release];
+
+    
+    //[3] Get Thumbnail
+   UIImageView *thumbnail_image = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,60,60)];
+    thumbnail_image.image= [UIImage imageNamed:@"comment-icon.png"];
     [cell addSubview:thumbnail_image];
+
+    
+    [thumbnail_image release];
+
     
     
-    //Get comment image
-    UIImageView *comment_icon = [[UIImageView alloc] initWithFrame:CGRectMake(280, 5, 35,33)];
-    comment_icon.image = [UIImage imageNamed:@"comment-icon.png"];
-    [cell addSubview:comment_icon];
     
-    //[3] Get # of comments
+    
+    //[5] Get # of comments
     NSNumber *num_comments = [postObject objectForKey:@"num_comments"];
-    UILabel *num_comments_label= [[UILabel alloc] initWithFrame:CGRectMake(287, 15, 20,10)];
+    UILabel *num_comments_label= [[UILabel alloc] initWithFrame:CGRectMake(22, 19, 30,15)];
     num_comments_label.backgroundColor = [UIColor clearColor];
     num_comments_label.numberOfLines = 1;
     num_comments_label.text = [num_comments stringValue];
-    num_comments_label.textColor = [UIColor whiteColor];
+    num_comments_label.textColor = [UIColor blackColor];
     num_comments_label.font = myFont;
     [cell addSubview:num_comments_label];
+    
+    [num_comments_label release];
   
     
-    //[4] Get Timestamp
+    //[6] Get Timestamp
     NSString *time_stamp = [postObject objectForKey:@"created_utc"];
     double unixTimeStamp = [time_stamp doubleValue];
     NSTimeInterval interval=unixTimeStamp;
@@ -198,7 +201,7 @@
     [formatter setLocale:[NSLocale currentLocale]];
     [formatter setDateFormat:@"dd.MM.yyyy"];
     NSString *date_string=[formatter stringFromDate:date];
-    UILabel *time_label= [[UILabel alloc] initWithFrame:CGRectMake(265, 50, 80,10)];
+    UILabel *time_label= [[UILabel alloc] initWithFrame:CGRectMake(260, 50, 80,10)];
     time_label.backgroundColor = [UIColor blackColor];
     time_label.numberOfLines = 1;
     time_label.text = date_string;
@@ -206,13 +209,24 @@
     time_label.font = smallestFont;
     [cell addSubview:time_label];
     
-    
-  
-
+    [formatter release];
+    [time_label release];
     
     
     return cell;
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   // static NSString *CellIdentifier = @"reddit_cell";
+  //  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NSLog(@"Tapped!");
+    
+}
+
+
+
 
 /*
 // Override to support conditional editing of the table view.
