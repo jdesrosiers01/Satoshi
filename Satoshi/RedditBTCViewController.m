@@ -151,7 +151,7 @@
     title_label.backgroundColor = [UIColor blackColor];
     title_label.numberOfLines = 7;
     title_label.text = title;
-    title_label.textColor = [UIColor greenColor];
+    title_label.textColor = [UIColor orangeColor];
     title_label.font = myFont;
     [cell addSubview:title_label];
   
@@ -161,17 +161,30 @@
     poster_label.backgroundColor = [UIColor blackColor];
     poster_label.numberOfLines = 1;
     poster_label.text = poster;
-    poster_label.textColor = [UIColor greenColor];
+    poster_label.textColor = [UIColor orangeColor];
     poster_label.font = smallestFont;
     [cell addSubview:poster_label];
     
+    //[5] Get Thumbnail
+    NSString *ImageURL =[postObject objectForKey:@"thumbnail"];
+    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:ImageURL]];
+    UIImageView *thumbnail_image = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,60,60)];
+    thumbnail_image.image = [UIImage imageWithData:imageData];
+    [cell addSubview:thumbnail_image];
+    
+    
+    //Get comment image
+    UIImageView *comment_icon = [[UIImageView alloc] initWithFrame:CGRectMake(280, 5, 35,33)];
+    comment_icon.image = [UIImage imageNamed:@"comment-icon.png"];
+    [cell addSubview:comment_icon];
+    
     //[3] Get # of comments
     NSNumber *num_comments = [postObject objectForKey:@"num_comments"];
-    UILabel *num_comments_label= [[UILabel alloc] initWithFrame:CGRectMake(280, 10, 20,10)];
-    num_comments_label.backgroundColor = [UIColor blackColor];
+    UILabel *num_comments_label= [[UILabel alloc] initWithFrame:CGRectMake(287, 15, 20,10)];
+    num_comments_label.backgroundColor = [UIColor clearColor];
     num_comments_label.numberOfLines = 1;
     num_comments_label.text = [num_comments stringValue];
-    num_comments_label.textColor = [UIColor greenColor];
+    num_comments_label.textColor = [UIColor whiteColor];
     num_comments_label.font = myFont;
     [cell addSubview:num_comments_label];
   
@@ -189,21 +202,12 @@
     time_label.backgroundColor = [UIColor blackColor];
     time_label.numberOfLines = 1;
     time_label.text = date_string;
-    time_label.textColor = [UIColor greenColor];
+    time_label.textColor = [UIColor orangeColor];
     time_label.font = smallestFont;
     [cell addSubview:time_label];
     
     
-    //[5] Get Thumbnail
-    NSString *ImageURL =[postObject objectForKey:@"thumbnail"];
-    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:ImageURL]];
-    UIImageView *thumbnail_image = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,60,60)];
-    thumbnail_image.image = [UIImage imageWithData:imageData];
-    [cell addSubview:thumbnail_image];
-    
-    UIImageView *comment_icon = [[UIImageView alloc] initWithFrame:CGRectMake(280, 10, 20,10)];
-    comment_icon.image = [UIImage imageNamed:@"comment-icon.png"];
-    [cell addSubview:comment_icon];
+  
 
     
     
