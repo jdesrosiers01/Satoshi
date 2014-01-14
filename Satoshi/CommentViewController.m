@@ -40,7 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //self.tableView.backgroundColor = [UIColor blackColor];
+    self.tableView.backgroundColor = [UIColor blackColor];
 
     //move tableview down to make room for navbar
    // [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
@@ -138,7 +138,7 @@
 -(void) labelTapped
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-    RedditBTCViewController *redditBTC = [storyboard instantiateViewControllerWithIdentifier:@"redditBTC"];
+    RedditBTCViewController *redditBTC = [storyboard instantiateViewControllerWithIdentifier:@"tab"];
     [redditBTC setModalPresentationStyle:UIModalPresentationFullScreen];
     [self presentViewController:redditBTC animated:YES completion:^{
         NSLog(@"it worked");
@@ -219,7 +219,6 @@
     
     //get object
     NSDictionary *postObject = [self.commentObjects objectAtIndex:indexPath.row];
-    UIFont *myFont = [ UIFont fontWithName: @"Courier" size: 12.0];
     UIFont *smallestFont = [ UIFont fontWithName: @"Courier" size: 8.0];
     
     NSString *author = [postObject objectForKey:@"author"];

@@ -31,9 +31,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.tableView.backgroundColor = [UIColor blackColor];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLineEtched];
     self.redditObjects = [[NSMutableArray alloc] init];
-    [self redditDataRequest];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT , 0), ^{
+        [self redditDataRequest];
+        dispatch_async(dispatch_get_main_queue(), ^ {
+            [self.tableView reloadData];
+            
+        });
+        
+    });
     
 
 }

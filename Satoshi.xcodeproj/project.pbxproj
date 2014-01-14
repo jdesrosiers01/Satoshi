@@ -17,6 +17,8 @@
 		79048E4E1885D52800887313 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79048E4D1885D52800887313 /* AddressBook.framework */; };
 		79048E511885D85C00887313 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79048E4F1885D85C00887313 /* Model.xcdatamodeld */; };
 		79048E541885D91500887313 /* BTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E531885D91500887313 /* BTC.m */; };
+		79048E571885EA0000887313 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 79048E561885EA0000887313 /* MBProgressHUD.m */; };
+		79048E591885EFC700887313 /* wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 79048E581885EFC700887313 /* wallpaper.png */; };
 		7931E72C187C9F1300B2605E /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E72A187C9F1300B2605E /* SetupViewController.m */; };
 		7931E72D187C9F1300B2605E /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7931E72B187C9F1300B2605E /* SetupViewController.xib */; };
 		7931E731187CA60800B2605E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931E730187CA60800B2605E /* Main_iPhone.storyboard */; };
@@ -61,6 +63,9 @@
 		79048E501885D85C00887313 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		79048E521885D91500887313 /* BTC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTC.h; sourceTree = "<group>"; };
 		79048E531885D91500887313 /* BTC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTC.m; sourceTree = "<group>"; };
+		79048E551885EA0000887313 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "../../../Downloads/MBProgressHUD-master/MBProgressHUD.h"; sourceTree = "<group>"; };
+		79048E561885EA0000887313 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "../../../Downloads/MBProgressHUD-master/MBProgressHUD.m"; sourceTree = "<group>"; };
+		79048E581885EFC700887313 /* wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallpaper.png; path = ../../../Downloads/wallpaper.png; sourceTree = "<group>"; };
 		7931E729187C9F1300B2605E /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetupViewController.h; path = ../SetupViewController.h; sourceTree = "<group>"; };
 		7931E72A187C9F1300B2605E /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetupViewController.m; path = ../SetupViewController.m; sourceTree = "<group>"; };
 		7931E72B187C9F1300B2605E /* SetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SetupViewController.xib; path = ../SetupViewController.xib; sourceTree = "<group>"; };
@@ -167,6 +172,8 @@
 				79048E40188464EF00887313 /* RedditLinkViewController.m */,
 				79048E451884884A00887313 /* CommentViewController.h */,
 				79048E461884884A00887313 /* CommentViewController.m */,
+				79048E551885EA0000887313 /* MBProgressHUD.h */,
+				79048E561885EA0000887313 /* MBProgressHUD.m */,
 				795DFAF818788D6300EE889E /* Images.xcassets */,
 				795DFAE118788D6300EE889E /* Supporting Files */,
 			);
@@ -177,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				79048E131883CFB200887313 /* backgroundTabBar.png */,
+				79048E581885EFC700887313 /* wallpaper.png */,
 				79048E0C188385B100887313 /* comment-icon.png */,
 				795DFAE918788D6300EE889E /* AppDelegate.h */,
 				795DFAEA18788D6300EE889E /* AppDelegate.m */,
@@ -297,6 +305,7 @@
 				79048E141883CFB200887313 /* backgroundTabBar.png in Resources */,
 				7931E731187CA60800B2605E /* Main_iPhone.storyboard in Resources */,
 				795DFAF918788D6300EE889E /* Images.xcassets in Resources */,
+				79048E591885EFC700887313 /* wallpaper.png in Resources */,
 				79048E0D188385B100887313 /* comment-icon.png in Resources */,
 				795DFAE518788D6300EE889E /* InfoPlist.strings in Resources */,
 			);
@@ -324,6 +333,7 @@
 				795DFB20187890BD00EE889E /* PriceBTCViewController.m in Sources */,
 				79048E471884884A00887313 /* CommentViewController.m in Sources */,
 				79048E541885D91500887313 /* BTC.m in Sources */,
+				79048E571885EA0000887313 /* MBProgressHUD.m in Sources */,
 				795DFB1718788FEC00EE889E /* RedditBTCViewController.m in Sources */,
 				795DFAE718788D6300EE889E /* main.m in Sources */,
 			);

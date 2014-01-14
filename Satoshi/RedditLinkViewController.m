@@ -157,7 +157,7 @@
 -(void) goBack
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-    RedditBTCViewController *redditBTC = [storyboard instantiateViewControllerWithIdentifier:@"redditBTC"];
+    RedditBTCViewController *redditBTC = [storyboard instantiateViewControllerWithIdentifier:@"tab"];
     [redditBTC setModalPresentationStyle:UIModalPresentationFullScreen];
     [self presentViewController:redditBTC animated:YES completion:^{
         NSLog(@"it worked");

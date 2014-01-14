@@ -21,5 +21,6 @@
 //Core data
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
+@property (retain, nonatomic) NSString *cost_of_one_bitcoin;
 
 @end
