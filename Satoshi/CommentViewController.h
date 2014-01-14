@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CommentViewController : UIViewController
+@interface CommentViewController : UITableViewController
 
 @end
+

@@ -9,6 +9,7 @@
 #import "SetupViewController.h"
 #import "PriceBTCViewController.h"
 #import "AppDelegate.h"
+#import "BTC.h"
 
 @interface SetupViewController ()
 
@@ -39,6 +40,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //Core Data
+    //1
+    AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+    //2
+    self.managedObjectContext = appDelegate.managedObjectContext;
     
     //Set number of lines equal to 2
     self.firstQuestion.lineBreakMode = NSLineBreakByWordWrapping;
@@ -227,13 +234,33 @@
                  context:(void *)context
 {
     if ([finished boolValue]) {
-        NSLog(@"Animation Done!");
-        //Go to the tabbar controller
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-        UIViewController *test = [storyboard instantiateViewControllerWithIdentifier:@"tab"];
-        AppDelegate *app = [[UIApplication sharedApplication] delegate];
-        app.window.rootViewController = test;
-        [app.window makeKeyAndVisible];
+        
+        //  1
+        BTC * newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"BTC"
+                                                          inManagedObjectContext:self.managedObjectContext];
+        //  2
+        newEntry.myBalance = self.myBalance;
+        newEntry.myCurrency = self.myCurrency;
+        NSString * result = [self.priceAlerts componentsJoinedByString:@","];
+        newEntry.myAlertPrices = result;
+
+        //  3
+        NSError *error;
+        if (![self.managedObjectContext save:&error])
+        {
+            NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+        }
+        else
+        {
+            //Go to the tabbar controller
+            NSLog(@"Animation Done!");
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+            UIViewController *test = [storyboard instantiateViewControllerWithIdentifier:@"tab"];
+            AppDelegate *app = [[UIApplication sharedApplication] delegate];
+            app.window.rootViewController = test;
+            [app.window makeKeyAndVisible];
+            
+        }
 
     }
 }

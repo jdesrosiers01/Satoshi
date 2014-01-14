@@ -29,6 +29,10 @@
 @property (retain, nonatomic) NSArray *priceAlerts;
 
 
+//Core Data
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
+
 //Satoshi's Animation
 - (void)animateLabelShowText:(NSString*)newText characterDelay:(NSTimeInterval)delay;
 

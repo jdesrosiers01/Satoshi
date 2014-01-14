@@ -15,5 +15,11 @@
 }
 
 
+@property (retain, nonatomic) IBOutlet UILabel *myBalance;
+@property (retain, nonatomic) IBOutlet UILabel *btcPrice;
+
+//Core data
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
 
 @end

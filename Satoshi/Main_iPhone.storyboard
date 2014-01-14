@@ -16,40 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-Rs-I7O">
-                                <rect key="frame" x="112" y="109" width="40" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9At-tM-Z83">
+                                <rect key="frame" x="115" y="80" width="91" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BTC Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMw-PI-W2a">
+                                <rect key="frame" x="121" y="208" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="BTC" image="first" id="u1e-5L-l1D"/>
+                    <connections>
+                        <outlet property="btcPrice" destination="wMw-PI-W2a" id="twl-dP-vEC"/>
+                        <outlet property="myBalance" destination="9At-tM-Z83" id="hsb-QE-g1p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
-        </scene>
-        <!--MapBTC View Controller - Map-->
-        <scene sceneID="00D-Jq-G1I">
-            <objects>
-                <viewController id="lC4-pl-Ubt" customClass="MapBTCViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ncb-C4-GbC"/>
-                        <viewControllerLayoutGuide type="bottom" id="u3l-Hg-5lS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="v9R-JE-LFS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="O32-lz-qLM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6kz-5W-X7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="653" y="1979"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -64,8 +54,6 @@
                     <connections>
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="bff-xn-eGY" kind="relationship" relationship="viewControllers" id="wwB-v3-cjo"/>
-                        <segue destination="ERb-RC-CSO" kind="relationship" relationship="viewControllers" id="O4D-lt-lh8"/>
-                        <segue destination="lC4-pl-Ubt" kind="relationship" relationship="viewControllers" id="VGP-IV-ch0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -101,6 +89,46 @@
             </objects>
             <point key="canvasLocation" x="653" y="563"/>
         </scene>
+        <!--Comment View Controller - Root View Controller-->
+        <scene sceneID="bv9-tu-wN3">
+            <objects>
+                <tableViewController storyboardIdentifier="commentView" id="dJE-dg-8B8" customClass="CommentViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Byh-Um-a42">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="commentCell" id="GBt-PH-Odg">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GBt-PH-Odg" id="c7G-Zp-ZbF">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="tiG-WR-ztc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9A-tM-HjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1627" y="563"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LcN-9O-n4N">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="3kY-lQ-aFH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lXe-mb-Xeq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dJE-dg-8B8" kind="relationship" relationship="rootViewController" id="bXA-2l-ySz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5U-jQ-FQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093" y="563"/>
+        </scene>
         <!--Reddit Link View Controller - redditLink-->
         <scene sceneID="MNw-Gy-h5n">
             <objects>
@@ -128,53 +156,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGV-da-QqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1079" y="-157"/>
-        </scene>
-        <!--Comment View Controller-->
-        <scene sceneID="19M-En-kN7">
-            <objects>
-                <viewController storyboardIdentifier="commentView" id="POo-Y8-ziX" customClass="CommentViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7sA-JZ-vHk"/>
-                        <viewControllerLayoutGuide type="bottom" id="tTE-pa-wa8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BZl-NI-0VF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hvN-xo-z9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1079" y="563"/>
-        </scene>
-        <!--TwitterBTC View Controller - Twitter-->
-        <scene sceneID="f9k-qq-nKr">
-            <objects>
-                <tableViewController id="ERb-RC-CSO" customClass="TwitterBTCViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kmN-bs-e71">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="iN6-lm-Yte">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iN6-lm-Yte" id="Tgt-gy-zRd">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ERb-RC-CSO" id="W46-15-Jsv"/>
-                            <outlet property="delegate" destination="ERb-RC-CSO" id="BJG-TB-bS9"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Twitter" id="cqi-EC-03P"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3lW-BL-G8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="653" y="1239"/>
         </scene>
     </scenes>
     <resources>
